@@ -15,7 +15,7 @@ Miniverse Arts é um projeto dedicado à venda de Funko Pops colecionáveis, cri
 
 ## Site
 
-- Acesse o site: [miniversearts.com]()
+- Acesse o site: [miniversearts.com](https://miniversearts-portifolio.vercel.app/)
 
 ## Contato
 
