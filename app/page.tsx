@@ -9,13 +9,13 @@ export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
-      title: "Funko Pop Personalizado - Meliodas",
+      title: "Funko Pop Personalizado - Adão Shuumatsu no Valkyrie",
       image: "/images/adam.webp",
       category: "Anime",
     },
     {
       id: 2,
-      title: "Funko Pop Personalizado - Personagem Anime",
+      title: "Funko Pop Personalizado - Billie Eilish Cantora",
       image: "/images/billie.webp",
       category: "Anime",
     },
