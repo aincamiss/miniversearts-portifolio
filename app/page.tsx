@@ -17,7 +17,7 @@ export default function FunkoPortfolio() {
       id: 2,
       title: "Funko Pop Personalizado - Billie Eilish Cantora",
       image: "/images/billie.webp",
-      category: "Anime",
+      category: "Artist",
     },
     {
       id: 3,
