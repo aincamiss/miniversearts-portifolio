@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -9,15 +12,15 @@ export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
-      title: "Funko Pop Personalizado - Adão Shuumatsu no Valkyrie",
+      title: "Funko Pop Personalizado - Meliodas",
       image: "/images/adam.webp",
       category: "Anime",
     },
     {
       id: 2,
-      title: "Funko Pop Personalizado - Billie Eilish Cantora",
+      title: "Funko Pop Personalizado - Personagem Anime",
       image: "/images/billie.webp",
-      category: "Artist",
+      category: "Anime",
     },
     {
       id: 3,
@@ -44,6 +47,12 @@ export default function FunkoPortfolio() {
       category: "Games",
     },
   ]
+
+  const [activeFilter, setActiveFilter] = useState("Todos")
+
+  const categories = ["Todos", "Anime", "Games"]
+
+  const filteredWorks = activeFilter === "Todos" ? works : works.filter((work) => work.category === activeFilter)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-orange-400 p-4">
@@ -99,18 +108,46 @@ export default function FunkoPortfolio() {
           </Button>
         </div>
 
+        {/* Category Filters */}
+        <div className="mb-6">
+          <div className="flex flex-wrap justify-center gap-2">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                onClick={() => setActiveFilter(category)}
+                variant={activeFilter === category ? "default" : "outline"}
+                className={`text-sm font-medium transition-all ${activeFilter === category
+                    ? "bg-white text-purple-600 shadow-lg scale-105"
+                    : "bg-white/20 text-white border-white/30 hover:bg-white/30"
+                  }`}
+              >
+                {category}
+                {category !== "Todos" && (
+                  <Badge className="ml-2 bg-purple-100 text-purple-600 text-xs">
+                    {works.filter((work) => work.category === category).length}
+                  </Badge>
+                )}
+              </Button>
+            ))}
+          </div>
+        </div>
+
         {/* Works Gallery */}
         <div className="mb-8">
           <h2 className="text-xl font-bold text-white mb-4 text-center">🎨 Meus Trabalhos</h2>
           <div className="grid grid-cols-2 gap-3">
-            {works.map((work) => (
+            {filteredWorks.map((work) => (
               <Card key={work.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white/95">
                 <CardContent className="p-0">
                   <div className="aspect-square relative">
                     <Image src={work.image || "/placeholder.svg"} alt={work.title} fill className="object-cover" />
                   </div>
                   <div className="p-3">
-                    <Badge variant="secondary" className="text-xs mb-2">
+                    <Badge
+                      variant="secondary"
+                      className={`text-xs mb-2 ${work.category === "Anime" ? "bg-blue-100 text-blue-600" : "bg-green-100 text-green-600"
+                        }`}
+                    >
                       {work.category}
                     </Badge>
                     <p className="text-sm font-medium text-gray-800 leading-tight">{work.title}</p>
