@@ -183,7 +183,7 @@ export default function FunkoPortfolio() {
                 📱 <strong>1.</strong> Me chama no WhatsApp ou DM
               </p>
               <p>
-                🎨 <strong>2.</strong> Manda a foto/ideia do seu Funko
+                🎨 <strong>2.</strong> Manda a foto/ideia do seu personagem
               </p>
               <p>
                 ⏰ <strong>3.</strong> Prazo de 7-15 dias úteis
