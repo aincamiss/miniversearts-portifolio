@@ -249,7 +249,7 @@ export default function FunkoPortfolio() {
                 ⏰ <strong>3.</strong> Prazo de 7-15 dias úteis
               </p>
               <p>
-                🚚 <strong>4.</strong> Entrego ou envio pelos Correios
+                🚚 <strong>4.</strong> Entrego ou envio pelos Correios.
               </p>
             </div>
           </CardContent>
