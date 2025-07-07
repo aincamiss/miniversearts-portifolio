@@ -105,7 +105,7 @@ export default function FunkoPortfolio() {
       title: "Chibi Personalizado - Brunhilde Shuumatsu no Valkyrie",
       image: "/images/brunhilde.webp",
       category: "Anime",
-    },
+    }, 
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
