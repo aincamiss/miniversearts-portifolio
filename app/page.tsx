@@ -12,15 +12,15 @@ export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
-      title: "Funko Pop Personalizado - Meliodas",
+      title: "Chibi Personalizado - Meliodas",
       image: "/images/adam.webp",
       category: "Anime",
     },
     {
       id: 2,
-      title: "Funko Pop Personalizado - Personagem Anime",
+      title: "Chibi Personalizado - Billie Eilish",
       image: "/images/billie.webp",
-      category: "Anime",
+      category: "Celebridades",
     },
     {
       id: 3,
@@ -30,19 +30,19 @@ export default function FunkoPortfolio() {
     },
     {
       id: 4,
-      title: "Funko Pop Personalizado - Jinx Arcane",
+      title: "Chibi Personalizado - Jinx Arcane",
       image: "/images/jinx.jpeg",
       category: "Games",
     },
     {
       id: 5,
-      title: "Funko Pop Personalizado - Rammus LoL",
+      title: "Chibi Personalizado - Rammus LoL",
       image: "/images/tatu.jpeg",
       category: "Games",
     },
     {
       id: 6,
-      title: "Funko Pop Personalizado - Zed LoL",
+      title: "Chibi Personalizado - Zed LoL",
       image: "/images/zed.jpeg",
       category: "Games",
     },
@@ -50,7 +50,7 @@ export default function FunkoPortfolio() {
 
   const [activeFilter, setActiveFilter] = useState("Todos")
 
-  const categories = ["Todos", "Anime", "Games"]
+  const categories = ["Todos", "Anime", "Games", "Celebridades", "Personalizados", "Animais", "Velas", "Topo de bolo"]
 
   const filteredWorks = activeFilter === "Todos" ? works : works.filter((work) => work.category === activeFilter)
 
@@ -117,8 +117,8 @@ export default function FunkoPortfolio() {
                 onClick={() => setActiveFilter(category)}
                 variant={activeFilter === category ? "default" : "outline"}
                 className={`text-sm font-medium transition-all ${activeFilter === category
-                    ? "bg-white text-purple-600 shadow-lg scale-105"
-                    : "bg-white/20 text-white border-white/30 hover:bg-white/30"
+                  ? "bg-white text-purple-600 shadow-lg scale-105"
+                  : "bg-white/20 text-white border-white/30 hover:bg-white/30"
                   }`}
               >
                 {category}
