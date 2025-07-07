@@ -100,6 +100,12 @@ export default function FunkoPortfolio() {
       image: "/images/oculos.webp",
       category: "Personalizados",
     },
+    {
+      id: 16,
+      title: "Chibi Personalizado - Brunhilde Shuumatsu no Valkyrie",
+      image: "/images/brunhilde.webp",
+      category: "Anime",
+    },
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
