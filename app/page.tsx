@@ -181,7 +181,7 @@ export default function FunkoPortfolio() {
 
         {/* Footer */}
         <div className="text-center text-white/80 text-sm pb-8">
-          <p>Feito com 💜 para você ter o Funko dos seus sonhos!</p>
+          <p>Feito com 💜 para você ter o boneco dos seus sonhos!</p>
           <p className="mt-2">Siga no Instagram para ver mais trabalhos ✨</p>
         </div>
       </div>
