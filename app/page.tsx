@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Instagram, MessageCircle, Heart, Star } from "lucide-react"
+import { Instagram, MessageCircle, Heart, Star, X, ZoomIn } from "lucide-react"
 
 export default function FunkoPortfolio() {
   const works = [
@@ -49,10 +49,19 @@ export default function FunkoPortfolio() {
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
+  const [selectedImage, setSelectedImage] = useState<typeof works[0] | null>(null)
 
   const categories = ["Todos", "Anime", "Games", "Celebridades", "Personalizados", "Animais", "Velas", "Topo de bolo"]
 
   const filteredWorks = activeFilter === "Todos" ? works : works.filter((work) => work.category === activeFilter)
+
+  const openImageModal = (work: typeof works[0]) => {
+    setSelectedImage(work)
+  }
+
+  const closeImageModal = () => {
+    setSelectedImage(null)
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-orange-400 p-4">
@@ -137,10 +146,17 @@ export default function FunkoPortfolio() {
           <h2 className="text-xl font-bold text-white mb-4 text-center">🎨 Meus Trabalhos</h2>
           <div className="grid grid-cols-2 gap-3">
             {filteredWorks.map((work) => (
-              <Card key={work.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow bg-white/95">
+              <Card
+                key={work.id}
+                className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-white/95 cursor-pointer transform hover:scale-105 group"
+                onClick={() => openImageModal(work)}
+              >
                 <CardContent className="p-0">
                   <div className="aspect-square relative">
-                    <Image src={work.image || "/placeholder.svg"} alt={work.title} fill className="object-cover" />
+                    <Image src={work.image || "/placeholder.svg"} alt={work.title} fill className="object-cover group-hover:scale-110 transition-transform duration-300" />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                      <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
                   </div>
                   <div className="p-3">
                     <Badge
@@ -185,6 +201,71 @@ export default function FunkoPortfolio() {
           <p className="mt-2">Siga no Instagram para ver mais trabalhos ✨</p>
         </div>
       </div>
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-300"
+          onClick={closeImageModal}
+        >
+          <div
+            className="relative max-w-sm w-full bg-white rounded-2xl shadow-2xl animate-in zoom-in duration-300"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeImageModal}
+              className="absolute -top-2 -right-2 bg-white rounded-full p-2 shadow-lg hover:bg-gray-100 transition-colors z-10"
+            >
+              <X className="w-5 h-5 text-gray-600" />
+            </button>
+
+            <div className="aspect-square relative overflow-hidden rounded-t-2xl">
+              <Image
+                src={selectedImage.image || "/placeholder.svg"}
+                alt={selectedImage.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="p-6">
+              <Badge
+                variant="secondary"
+                className={`text-xs mb-3 ${selectedImage.category === "Anime" ? "bg-blue-100 text-blue-600" : "bg-green-100 text-green-600"}`}
+              >
+                {selectedImage.category}
+              </Badge>
+              <h3 className="text-lg font-bold text-gray-800 mb-4">{selectedImage.title}</h3>
+
+              <div className="space-y-2">
+                <Button
+                  asChild
+                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold"
+                >
+                  <Link
+                    href={`https://wa.me/5519992036450?text=Oi!%20Vi%20o%20trabalho%20"${selectedImage.title}"%20e%20gostaria%20de%20encomendar%20algo%20similar!`}
+                    target="_blank"
+                  >
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Quero um igual!
+                  </Link>
+                </Button>
+
+                <Button
+                  asChild
+                  variant="outline"
+                  className="w-full border-purple-300 text-purple-600 hover:bg-purple-50"
+                >
+                  <Link href="https://www.instagram.com/miniverse.arts" target="_blank">
+                    <Instagram className="w-4 h-4 mr-2" />
+                    Ver mais no Instagram
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
