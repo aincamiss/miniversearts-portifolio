@@ -74,7 +74,7 @@ export default function FunkoPortfolio() {
       id: 11,
       title: "Chibi Personalizado - Neon Valorant",
       image: "/images/neon.webp",
-      category: "Anime",
+      category: "Games",
     },
     {
       id: 12,
@@ -86,7 +86,7 @@ export default function FunkoPortfolio() {
       id: 13,
       title: "Chibi Personalizado - Pantheon League of Legends",
       image: "/images/pantheon.webp",
-      category: "Anime",
+      category: "Games",
     },
     {
       id: 14,
