@@ -12,7 +12,7 @@ export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
-      title: "Chibi Personalizado - Adão",
+      title: "Chibi Personalizado - Adão Shuumatsu no Valkyrie",
       image: "/images/adam.webp",
       category: "Anime",
     },
@@ -36,22 +36,76 @@ export default function FunkoPortfolio() {
     },
     {
       id: 5,
-      title: "Chibi Personalizado - Rammus LoL",
+      title: "Chibi Personalizado - Rammus League of Legends",
       image: "/images/tatu.jpeg",
       category: "Games",
     },
     {
       id: 6,
-      title: "Chibi Personalizado - Zed LoL",
+      title: "Chibi Personalizado - Zed League of Legends",
       image: "/images/zed.jpeg",
       category: "Games",
+    },
+    {
+      id: 7,
+      title: "Chibi Personalizado - Mordekaiser League of Legends",
+      image: "/images/mordekaiser.webp",
+      category: "Games",
+    },
+    {
+      id: 8,
+      title: "Funko Pop Personalizado - Coraline",
+      image: "/images/coraline.webp",
+      category: "Filmes",
+    },
+    {
+      id: 9,
+      title: "Chibi Personalizado - Avatar Personalizado",
+      image: "/images/gremista.webp",
+      category: "Personalizados",
+    },
+    {
+      id: 10,
+      title: "Chibi Personalizado - Beru Solo Leveling",
+      image: "/images/beru.webp",
+      category: "Anime",
+    },
+    {
+      id: 11,
+      title: "Chibi Personalizado - Neon Valorant",
+      image: "/images/neon.webp",
+      category: "Anime",
+    },
+    {
+      id: 12,
+      title: "Funko Pop Personalizado - Zoro One Piece",
+      image: "/images/zoro.webp",
+      category: "Anime",
+    },
+    {
+      id: 13,
+      title: "Chibi Personalizado - Pantheon League of Legends",
+      image: "/images/pantheon.webp",
+      category: "Anime",
+    },
+    {
+      id: 14,
+      title: "Funko Pop Personalizado - Jett Valorant",
+      image: "/images/jett.webp",
+      category: "Games",
+    },
+    {
+      id: 15,
+      title: "Chibi Personalizado - Avatar Personalizado",
+      image: "/images/oculos.webp",
+      category: "Personalizados",
     },
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
   const [selectedImage, setSelectedImage] = useState<typeof works[0] | null>(null)
 
-  const categories = ["Todos", "Anime", "Games", "Celebridades", "Personalizados", "Animais", "Velas", "Topo de bolo"]
+  const categories = ["Todos", "Anime", "Games", "Celebridades", "Personalizados", "Velas", "Filmes", "Topo de bolo"]
 
   const filteredWorks = activeFilter === "Todos" ? works : works.filter((work) => work.category === activeFilter)
 
