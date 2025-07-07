@@ -74,7 +74,7 @@ export default function FunkoPortfolio() {
             </div>
           </div>
           <h1 className="text-xl sm:text-2xl font-bold text-white mb-2 px-2 whitespace-nowrap">✨ Miniverse Arts ✨</h1>
-          <p className="text-white/90 text-sm mb-4 px-2">Aquele Funko Pop que você sempre sonhou? Eu crio para você!</p>
+          <p className="text-white/90 text-sm mb-4 px-2">Aquele boneco que você sempre sonhou? Eu crio para você!</p>
           <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30">
             <Heart className="w-3 h-3 mr-1 fill-current" />
             Feito com amor
