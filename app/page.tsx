@@ -12,7 +12,7 @@ export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
-      title: "Chibi Personalizado - Meliodas",
+      title: "Chibi Personalizado - Adão",
       image: "/images/adam.webp",
       category: "Anime",
     },
