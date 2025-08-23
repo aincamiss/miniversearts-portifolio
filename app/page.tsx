@@ -12,100 +12,100 @@ export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
-      title: "Chibi Personalizado - Adão Shuumatsu no Valkyrie",
+      title: "Chibi - Adão Shuumatsu no Valkyrie",
       image: "/images/adam.webp",
       category: "Anime",
     },
     {
       id: 2,
-      title: "Chibi Personalizado - Billie Eilish",
+      title: "Chibi - Billie Eilish",
       image: "/images/billie.webp",
       category: "Celebridades",
     },
     {
       id: 3,
-      title: "Funko Pop Personalizado - Reyna Valorant",
+      title: "Funko Pop - Reyna Valorant",
       image: "/images/reyna.jpeg",
       category: "Games",
     },
     {
       id: 4,
-      title: "Chibi Personalizado - Jinx Arcane",
+      title: "Chibi - Jinx Arcane",
       image: "/images/jinx.jpeg",
       category: "Games",
     },
     {
       id: 5,
-      title: "Chibi Personalizado - Rammus League of Legends",
+      title: "Chibi - Rammus League of Legends",
       image: "/images/tatu.jpeg",
       category: "Games",
     },
     {
       id: 6,
-      title: "Chibi Personalizado - Zed League of Legends",
+      title: "Chibi- Zed League of Legends",
       image: "/images/zed.jpeg",
       category: "Games",
     },
     {
       id: 7,
-      title: "Chibi Personalizado - Mordekaiser League of Legends",
+      title: "Chibi - Mordekaiser League of Legends",
       image: "/images/mordekaiser.webp",
       category: "Games",
     },
     {
       id: 8,
-      title: "Funko Pop Personalizado - Coraline",
+      title: "Funko Pop - Coraline",
       image: "/images/coraline.webp",
       category: "Filmes",
     },
     {
       id: 9,
-      title: "Chibi Personalizado - Avatar Personalizado",
+      title: "Chibi - Avatar Personalizado",
       image: "/images/gremista.webp",
       category: "Personalizados",
     },
     {
       id: 10,
-      title: "Chibi Personalizado - Beru Solo Leveling",
+      title: "Chibi - Beru Solo Leveling",
       image: "/images/beru.webp",
       category: "Anime",
     },
     {
       id: 11,
-      title: "Chibi Personalizado - Neon Valorant",
+      title: "Chibi - Neon Valorant",
       image: "/images/neon.webp",
       category: "Games",
     },
     {
       id: 12,
-      title: "Funko Pop Personalizado - Zoro One Piece",
+      title: "Funko Pop - Zoro One Piece",
       image: "/images/zoro.webp",
       category: "Anime",
     },
     {
       id: 13,
-      title: "Chibi Personalizado - Pantheon League of Legends",
+      title: "Chibi - Pantheon League of Legends",
       image: "/images/pantheon.webp",
       category: "Games",
     },
     {
       id: 14,
-      title: "Funko Pop Personalizado - Jett Valorant",
+      title: "Funko Pop - Jett Valorant",
       image: "/images/jett.webp",
       category: "Games",
     },
     {
       id: 15,
-      title: "Chibi Personalizado - Avatar Personalizado",
+      title: "Chibi - Avatar Personalizado",
       image: "/images/oculos.webp",
       category: "Personalizados",
     },
     {
       id: 16,
-      title: "Chibi Personalizado - Brunhilde Shuumatsu no Valkyrie",
+      title: "Chibi - Brunhilde Shuumatsu no Valkyrie",
       image: "/images/brunhilde.webp",
       category: "Anime",
-    }, 
+    },
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
@@ -157,7 +157,7 @@ export default function FunkoPortfolio() {
             className="w-full h-14 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold text-lg shadow-lg"
           >
             <Link
-              href="https://wa.me/5519992036450?text=Oi!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20encomendar%20um%20Funko%20Pop%20personalizado!"
+              href="https://wa.me/5519992036450?text=Oi!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20encomendar%20um%20boneco!"
               target="_blank"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
@@ -303,7 +303,7 @@ export default function FunkoPortfolio() {
                   className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold"
                 >
                   <Link
-                    href={`https://wa.me/5519992036450?text=Oi!%20Vi%20o%20trabalho%20"${selectedImage.title}"%20e%20gostaria%20de%20encomendar%20algo%20similar!`}
+                    href={`https://wa.me/5519992036450?text=Oi!%20vi%20o%20trabalho%20"${selectedImage.title}"%20e%20gostaria%20de%20encomendar%20algo%20similar!`}
                     target="_blank"
                   >
                     <MessageCircle className="w-4 h-4 mr-2" />
