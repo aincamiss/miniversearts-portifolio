@@ -31,7 +31,7 @@ export default function FunkoPortfolio() {
     {
       id: 4,
       title: "Jinx - Arcane chibi",
-      image: "/images/jinx.jpeg",
+      image: "/images/Jinx Chibi.jpg",
       category: "Games",
     },
     {
@@ -111,6 +111,24 @@ export default function FunkoPortfolio() {
       title: "Akame - akame ga KILL! chibi",
       image: "/images/Akame.jpg",
       category: "Anime",
+    },
+    {
+      id: 18,
+      title: "Morgana - League of Legends chibi",
+      image: "/images/Morgana.jpg",
+      category: "Games",
+    },
+    {
+      id: 19,
+      title: "Jett - VALORANT chibi",
+      image: "/images/jett fofinha.jpg",
+      category: "Games",
+    },
+    {
+      id: 20,
+      title: "Guardião - DESBRAVADOR chibi",
+      image: "/images/Guardião Desbravador .jpg",
+      category: "Games",
     },
   ]
 
