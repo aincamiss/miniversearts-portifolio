@@ -25,7 +25,7 @@ export default function FunkoPortfolio() {
     {
       id: 3,
       title: "Reyna - VALORANT funkoPOP",
-      image: "/images/reynaPOP.png",
+      image: "/images/reyanaPOP.png",
       category: "Games",
     },
     {
