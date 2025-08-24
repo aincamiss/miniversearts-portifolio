@@ -106,6 +106,12 @@ export default function FunkoPortfolio() {
       image: "/images/brunhilde.webp",
       category: "Anime",
     },
+    {
+      id: 17,
+      title: "Chibi - Akame - Akame ga KILL!",
+      image: "/images/Akame.jpg",
+      category: "Anime",
+    },
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
