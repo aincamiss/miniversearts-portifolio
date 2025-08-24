@@ -25,7 +25,7 @@ export default function FunkoPortfolio() {
     {
       id: 3,
       title: "Reyna - VALORANT funkoPOP",
-      image: "/images/reyna.jpeg",
+      image: "/images/reynaPOP.png",
       category: "Games",
     },
     {
@@ -43,7 +43,7 @@ export default function FunkoPortfolio() {
     {
       id: 6,
       title: "Zed - League of Legends chibi",
-      image: "/images/zed.jpeg",
+      image: "/images/zed chibi.png",
       category: "Games",
     },
     {
@@ -79,7 +79,7 @@ export default function FunkoPortfolio() {
     {
       id: 12,
       title: "Zoro - One Piece funkoPOP",
-      image: "/images/zoro.webp",
+      image: "/images/zoro fundo preto.png",
       category: "Anime",
     },
     {
@@ -91,7 +91,7 @@ export default function FunkoPortfolio() {
     {
       id: 14,
       title: "Jett - VALORANT funkoPOP",
-      image: "/images/jett.webp",
+      image: "/images/jettPOP.png",
       category: "Games",
     },
     {
@@ -121,7 +121,7 @@ export default function FunkoPortfolio() {
     {
       id: 19,
       title: "Jett - VALORANT chibi",
-      image: "/images/jett fofinha.jpg",
+      image: "/images/jett chibi.png",
       category: "Games",
     },
     {
@@ -130,6 +130,33 @@ export default function FunkoPortfolio() {
       image: "/images/Guardião Desbravador .jpg",
       category: "Personalizados",
     },
+    {
+      id: 21,
+      title: "Viper - VALORANT funkoPOP",
+      image: "/images/viper.png",
+      category: "games",
+    },
+    {
+      id: 22,
+      title: "Leon - Resident Evil chibi",
+      image: "/images/leon.png",
+      category: "games",
+    },
+    {
+      id: 23,
+      title: "Avatar - Personalizado funkoPOP",
+      image: "/images/basquete.png",
+      category: "Personalizado",
+    },
+    {
+      id: 24,
+      title: "Avatar - Personalizado chibi",
+      image: "/images/topo de bolo.png",
+      category: "Topo de bolo",
+    },
+
+
+
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
