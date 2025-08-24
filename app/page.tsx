@@ -128,7 +128,7 @@ export default function FunkoPortfolio() {
       id: 20,
       title: "Guardião - DESBRAVADOR chibi",
       image: "/images/Guardião Desbravador .jpg",
-      category: "Games",
+      category: "Personalizados",
     },
   ]
 
