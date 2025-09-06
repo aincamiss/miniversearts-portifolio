@@ -1,166 +1,189 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Instagram, MessageCircle, Heart, Star, X, ZoomIn } from "lucide-react"
+import { Instagram, MessageCircle, Heart, Star, X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react"
 
 export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
       title: "Adão - Shuumatsu no Valkyrie chibi",
+      images: ["/images/adam.webp"],
       image: "/images/adam.webp",
       category: "Anime",
     },
     {
       id: 2,
       title: "Billie Eilish - chibi",
+      images: ["/images/billie.webp"],
       image: "/images/billie.webp",
       category: "Celebridades",
     },
     {
       id: 3,
       title: "Reyna - VALORANT funkoPOP",
+      images: ["/images/reyanaPOP.png"],
       image: "/images/reyanaPOP.png",
       category: "Games",
     },
     {
       id: 4,
       title: "Jinx - Arcane chibi",
+      images: ["/images/Jinx Chibi.jpg"],
       image: "/images/Jinx Chibi.jpg",
       category: "Games",
     },
     {
       id: 5,
       title: "Rammus - League of Legends",
+      images: ["/images/tatu.jpeg"],
       image: "/images/tatu.jpeg",
       category: "Games",
     },
     {
       id: 6,
       title: "Zed - League of Legends chibi",
+      images: ["/images/zed chibi.png"],
       image: "/images/zed chibi.png",
       category: "Games",
     },
     {
       id: 7,
       title: "Mordekaiser - League of Legends chibi",
+      images: ["/images/mordekaiser.webp"],
       image: "/images/mordekaiser.webp",
       category: "Games",
     },
     {
       id: 8,
       title: "Coraline - funkoPOP",
+      images: ["/images/coraline.webp"],
       image: "/images/coraline.webp",
       category: "Filmes",
     },
     {
       id: 9,
       title: "Avatar - chibi",
+      images: ["/images/gremista.webp"],
       image: "/images/gremista.webp",
       category: "Personalizados",
     },
     {
       id: 10,
       title: "Beru - Solo Leveling chibi",
+      images: ["/images/beru.webp"],
       image: "/images/beru.webp",
       category: "Anime",
     },
     {
       id: 11,
       title: "Neon - VALORANT chibi",
+      images: ["/images/neon.webp"],
       image: "/images/neon.webp",
       category: "Games",
     },
     {
       id: 12,
       title: "Zoro - One Piece funkoPOP",
+      images: ["/images/zoro fundo preto.png"],
       image: "/images/zoro fundo preto.png",
       category: "Anime",
     },
     {
       id: 13,
       title: "Pantheon - League of Legends chibi",
+      images: ["/images/pantheon.webp"],
       image: "/images/pantheon.webp",
       category: "Games",
     },
     {
       id: 14,
       title: "Jett - VALORANT funkoPOP",
+      images: ["/images/jettPOP.png"],
       image: "/images/jettPOP.png",
       category: "Games",
     },
     {
       id: 15,
       title: "Avatar - chibi",
+      images: ["/images/oculos.webp"],
       image: "/images/oculos.webp",
       category: "Personalizados",
     },
     {
       id: 16,
       title: "Brunhilde - Shuumatsu no Valkyrie chibi",
+      images: ["/images/brunhilde.webp"],
       image: "/images/brunhilde.webp",
       category: "Anime",
     },
     {
       id: 17,
       title: "Akame - akame ga KILL! chibi",
+      images: ["/images/Akame.jpg", "/images/Beakko RE ZERO.jpg"],
       image: "/images/Akame.jpg",
       category: "Anime",
     },
     {
       id: 18,
       title: "Morgana - League of Legends chibi",
+      images: ["/images/Morgana.jpg"],
       image: "/images/Morgana.jpg",
       category: "Games",
     },
     {
       id: 19,
       title: "Jett - VALORANT chibi",
+      images: ["/images/jett chibi.png"],
       image: "/images/jett chibi.png",
       category: "Games",
     },
     {
       id: 20,
       title: "Guardião - DESBRAVADOR chibi",
+      images: ["/images/Guardião Desbravador .jpg"],
       image: "/images/Guardião Desbravador .jpg",
       category: "Personalizados",
     },
     {
       id: 21,
       title: "Viper - VALORANT funkoPOP",
+      images: ["/images/viper.png"],
       image: "/images/viper.png",
       category: "games",
     },
     {
       id: 22,
       title: "Leon - Resident Evil chibi",
+      images: ["/images/leon.png"],
       image: "/images/leon.png",
       category: "games",
     },
     {
       id: 23,
       title: "Avatar - Personalizado funkoPOP",
+      images: ["/images/basquete.png"],
       image: "/images/basquete.png",
       category: "Personalizado",
     },
     {
       id: 24,
       title: "Avatar - Personalizado chibi",
+      images: ["/images/topo de bolo.png"],
       image: "/images/topo de bolo.png",
       category: "Topo de bolo",
     },
-
-
 
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
   const [selectedImage, setSelectedImage] = useState<typeof works[0] | null>(null)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const categories = ["Todos", "Anime", "Games", "Celebridades", "Personalizados", "Velas", "Filmes", "Topo de bolo"]
 
@@ -168,11 +191,36 @@ export default function FunkoPortfolio() {
 
   const openImageModal = (work: typeof works[0]) => {
     setSelectedImage(work)
+    setCurrentImageIndex(0)
   }
 
   const closeImageModal = () => {
     setSelectedImage(null)
+    setCurrentImageIndex(0)
   }
+
+  const nextImage = () => {
+    if (selectedImage && selectedImage.images.length > 1) {
+      setCurrentImageIndex((prev) => (prev + 1) % selectedImage.images.length)
+    }
+  }
+
+  const prevImage = () => {
+    if (selectedImage && selectedImage.images.length > 1) {
+      setCurrentImageIndex((prev) => (prev - 1 + selectedImage.images.length) % selectedImage.images.length)
+    }
+  }
+
+  // Auto slide para o carrossel
+  useEffect(() => {
+    if (selectedImage && selectedImage.images.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prev) => (prev + 1) % selectedImage.images.length)
+      }, 4000) // Troca a imagem a cada 4 segundos
+
+      return () => clearInterval(interval)
+    }
+  }, [selectedImage])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-400 to-orange-400 p-4">
@@ -332,11 +380,48 @@ export default function FunkoPortfolio() {
 
             <div className="aspect-square relative overflow-hidden rounded-t-2xl">
               <Image
-                src={selectedImage.image || "/placeholder.svg"}
+                src={selectedImage.images[currentImageIndex] || "/placeholder.svg"}
                 alt={selectedImage.title}
                 fill
                 className="object-cover"
               />
+
+              {/* Indicadores de carrossel */}
+              {selectedImage.images.length > 1 && (
+                <>
+                  {/* Botões de navegação */}
+                  <button
+                    onClick={prevImage}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-colors"
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                  </button>
+
+                  <button
+                    onClick={nextImage}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 transition-colors"
+                  >
+                    <ChevronRight className="w-4 h-4" />
+                  </button>
+
+                  {/* Indicadores de pontos */}
+                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2">
+                    {selectedImage.images.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImageIndex(index)}
+                        className={`w-2 h-2 rounded-full transition-colors ${index === currentImageIndex ? "bg-white" : "bg-white/50"
+                          }`}
+                      />
+                    ))}
+                  </div>
+
+                  {/* Contador de imagens */}
+                  <div className="absolute top-3 right-3 bg-black/50 text-white text-xs px-2 py-1 rounded-full">
+                    {currentImageIndex + 1} / {selectedImage.images.length}
+                  </div>
+                </>
+              )}
             </div>
 
             <div className="p-6">
