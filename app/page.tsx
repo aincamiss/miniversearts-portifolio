@@ -33,7 +33,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 4,
-      title: "Jinx - league Of Legends chibi",
+      title: "Jinx - League Of Legends chibi",
       images: ["/images/Jinx Chibi.jpg"],
       image: "/images/Jinx Chibi.jpg",
       category: "Games",
@@ -181,7 +181,7 @@ export default function FunkoPortfolio() {
     {
       id: 25,
       title: "Soraka - League Of Legends chibi",
-      images: ["/images/soraka frente.png"],
+      images: ["/images/soraka frente.png","/images/soraka costas.png","/images/soraka direita.png","/images/soraka esquerda.png"],
       image: "/images/soraka frente",
       category: "games",
     },
