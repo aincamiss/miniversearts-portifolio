@@ -125,7 +125,7 @@ export default function FunkoPortfolio() {
     {
       id: 17,
       title: "Akame - akame ga KILL! chibi",
-      images: ["/images/Akame.jpg", "/images/Beakko RE ZERO.jpg"],
+      images: ["/images/Akame.jpg"],
       image: "/images/Akame.jpg",
       category: "Anime",
     },
@@ -185,6 +185,14 @@ export default function FunkoPortfolio() {
       image: "/images/soraka frente",
       category: "games",
     },
+    {
+      id: 26,
+      title: "Beakko - RE ZERO",
+      images: ["/images/Beakko RE ZERO.jpg"],
+      image: "/images/Beakko RE ZERO.jpg",
+      category: "anime",
+    },
+    
 
   ]
 
