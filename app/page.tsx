@@ -33,7 +33,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 4,
-      title: "Jinx - Arcane chibi",
+      title: "Jinx - league Of Legends chibi",
       images: ["/images/Jinx Chibi.jpg"],
       image: "/images/Jinx Chibi.jpg",
       category: "Games",
