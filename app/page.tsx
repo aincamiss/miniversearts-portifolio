@@ -178,6 +178,13 @@ export default function FunkoPortfolio() {
       image: "/images/topo de bolo.png",
       category: "Topo de bolo",
     },
+    {
+      id: 25,
+      title: "Soraka - League Of Legends chibi",
+      images: ["/images/soraka frente.png"],
+      image: "/images/soraka frente",
+      category: "games",
+    },
 
   ]
 
