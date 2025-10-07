@@ -181,8 +181,8 @@ export default function FunkoPortfolio() {
     {
       id: 25,
       title: "Soraka - League Of Legends chibi",
-      images: ["/images/soraka frente.png","/images/soraka costas.png","/images/soraka direita.png","/images/soraka esquerda.png"],
-      image: "/images/soraka frente",
+      images: ["/images/soraka frente.png"],
+      image: "/images/soraka frente.png",
       category: "games",
     },
     {
