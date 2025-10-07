@@ -68,7 +68,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 9,
-      title: "Avatar - chibi",
+      title: "Avatar - Personalizado chibi",
       images: ["/images/gremista.webp"],
       image: "/images/gremista.webp",
       category: "Personalizados",
@@ -110,7 +110,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 15,
-      title: "Avatar - chibi",
+      title: "Avatar - Personalizado chibi",
       images: ["/images/oculos.webp"],
       image: "/images/oculos.webp",
       category: "Personalizados",
