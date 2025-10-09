@@ -255,7 +255,13 @@ export default function FunkoPortfolio() {
       image: "/images/will o mago POP.png",
       category: "Filmes",
     },
-
+    {
+      id: 36,
+      title: "Cavaleiro de Peixes - Cavaleiros do Zodíaco Chibi",
+      images: ["/images/cavaleiro de peixes chibi.png"],
+      image: "/images/cavaleiro de peixes chibi.png",
+      category: "Anime",
+    },
     
 
   ]
