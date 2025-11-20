@@ -262,6 +262,41 @@ export default function FunkoPortfolio() {
       image: "/images/cavaleiro de peixes chibi.png",
       category: "Anime",
     },
+    {
+      id: 37,
+      title: "Ghost face - Panico Chibi",
+      images: ["/images/Panico.png"],
+      image: "/images/Panico.png",
+      category: "Filmes",
+    },
+    {
+      id: 38,
+      title: "Cogumelos - Mario",
+      images: ["/images/cogumelo do mario.png"],
+      image: "/images/cogumelo do mario.png",
+      category: "Games",
+    },
+    {
+      id: 39,
+      title: "Florzinha - Meninas super poderosas",
+      images: ["/images/florzinha.png"],
+      image: "/images/florzinha.png",
+      category: "Topo de bolo",
+    },
+    {
+      id: 40,
+      title: "conjunto Meninas poderosas - Meinas super poderosas Chibi",
+      images: ["/images/meninas super poderosas.png"],
+      image: "/images/meninas super poderosas.png",
+      category: "Topo de bolo",
+    },
+    {
+      id: 41,
+      title: " Avatar - Personalizado FunkokPOP",
+      images: ["/images/naruto personalizado funko.png"],
+      image: "/images/naruto personalizado funko.png",
+      category: "Personalizados",
+    },
     
 
   ]
