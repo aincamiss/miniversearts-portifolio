@@ -285,7 +285,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 40,
-      title: "conjunto Meninas poderosas - Meinas super poderosas Chibi",
+      title: "conjunto Meninas - Meinas super poderosas Chibi",
       images: ["/images/meninas super poderosas.png"],
       image: "/images/meninas super poderosas.png",
       category: "Topo de bolo",
