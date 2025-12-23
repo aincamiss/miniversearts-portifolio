@@ -302,7 +302,7 @@ export default function FunkoPortfolio() {
       title: " Avatar - Personalizado baby Chibi,
       images: ["/images/baby caio.png"],
       image: "/images/baby caio.png",
-      category: "Personalizados", "Topo de bolo",
+      category: "Personalizados",
     },
     {
       id: 43,
