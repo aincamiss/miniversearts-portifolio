@@ -285,7 +285,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 40,
-      title: "conjunto Meninas - Meinas super poderosas Chibi",
+      title: "conjunto Meninas - Meninas super poderosas Chibi",
       images: ["/images/meninas super poderosas.png"],
       image: "/images/meninas super poderosas.png",
       category: "Topo de bolo",
@@ -296,6 +296,20 @@ export default function FunkoPortfolio() {
       images: ["/images/naruto personalizado funko.png"],
       image: "/images/naruto personalizado funko.png",
       category: "Personalizados",
+    },
+     {
+      id: 42,
+      title: " Avatar - Personalizado baby Chibi,
+      images: ["/images/baby caio.png"],
+      image: "/images/baby caio.png",
+      category: "Personalizados", "Topo de bolo",
+    },
+    {
+      id: 43,
+      title: " Mulher Maravilha - Chibi",
+      images: ["/images/mulher maravilha.png"],
+      image: "/images/mulher maravilha.png",
+      category: "Filmes",
     },
     
 
