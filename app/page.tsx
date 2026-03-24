@@ -304,7 +304,6 @@ export default function FunkoPortfolio() {
       image: "/images/baby caio.png",
       category: "Topo de bolo",
     },
-    
 
   ]
 
