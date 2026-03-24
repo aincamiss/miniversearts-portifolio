@@ -208,7 +208,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 29,
-      title: "Arlequina - FunkoPOP",
+      title: "Arlequina - DC FunkoPOP",
       images: ["/images/arlequina POP.png"],
       image: "/images/arlequina POP.png",
       category: "Filmes",
@@ -236,7 +236,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 33,
-      title: "Moranguinho -  FunkoPOP",
+      title: "Moranguinho - FunkoPOP",
       images: ["/images/moranguinhoPOP.png"],
       image: "/images/moranguinhoPOP.png",
       category: "Topo de bolo",
@@ -297,6 +297,15 @@ export default function FunkoPortfolio() {
       image: "/images/naruto personalizado funko.png",
       category: "Personalizados",
     },
+    {
+      id: 42,
+      title: " Mulher Maravilha - DC Chibi",
+      images: ["/images/mulher maravilha.png"],
+      image: "/images/mulher maravilha.png",
+      category: "Filmes",
+    },
+    
+
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
