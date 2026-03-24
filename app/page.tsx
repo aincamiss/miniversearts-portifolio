@@ -303,7 +303,7 @@ export default function FunkoPortfolio() {
   const [selectedImage, setSelectedImage] = useState<typeof works[0] | null>(null)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-  const categories = ["Todos", "Anime", "Games", "Celebridades", "Personalizados", "Velas", "Filmes", "Topo de bolo"]
+  const categories = ["Todos", "Chaveiros", "Anime", "Games", "Celebridades", "Personalizados", "Velas", "Filmes", "Topo de bolo"]
 
   const filteredWorks = activeFilter === "Todos" ? works : works.filter((work) => work.category === activeFilter)
 
