@@ -298,18 +298,11 @@ export default function FunkoPortfolio() {
       category: "Personalizados",
     },
     {
-      id: 42,
-      title: " Avatar Baby - Personalizado Chibi",
+    id: 42,
+      title: " baby avatar - Personalizado Chibi",
       images: ["/images/baby caio.png"],
       image: "/images/baby caio.png",
-      category: "Personalizados",
-    },
-    {
-      id: 43,
-      title: " Mulher Maravilha - Chibi",
-      images: ["/images/mulher maravilha.png"],
-      image: "/images/mulher maravilha.png",
-      category: "Filmes",
+      category: "Topo de bolo",
     },
     
 
