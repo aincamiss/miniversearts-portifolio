@@ -298,7 +298,7 @@ export default function FunkoPortfolio() {
       category: "Personalizados",
     },
     {
-    id: 42,
+      id: 42,
       title: " baby avatar - Personalizado Chibi",
       images: ["/images/baby caio.png"],
       image: "/images/baby caio.png",
