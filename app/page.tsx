@@ -297,13 +297,6 @@ export default function FunkoPortfolio() {
       image: "/images/naruto personalizado funko.png",
       category: "Personalizados",
     },
-    {
-      id: 42,
-      title: " baby avatar - Personalizado Chibi",
-      images: ["/images/baby caio.png"],
-      image: "/images/baby caio.png",
-      category: "Topo de bolo",
-    },
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
