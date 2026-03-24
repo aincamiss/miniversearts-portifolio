@@ -303,8 +303,7 @@ export default function FunkoPortfolio() {
       images: ["/images/baby caio.png"],
       image: "/images/baby caio.png",
       category: "Topo de bolo",
-    },
-
+    }
   ]
 
   const [activeFilter, setActiveFilter] = useState("Todos")
