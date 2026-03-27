@@ -116,7 +116,7 @@ export default function FunkoPortfolio() {
       category: "Personalizados",
     },
     {
-      id: 16,
+      id: 24,
       title: "Brunhilde - Shuumatsu no Valkyrie chibi",
       images: ["/images/brunhilde.webp"],
       image: "/images/brunhilde.webp",
@@ -172,7 +172,7 @@ export default function FunkoPortfolio() {
       category: "Personalizados",
     },
     {
-      id: 24,
+      id: 16,
       title: "Avatar - Personalizado chibi",
       images: ["/images/topo de bolo.png"],
       image: "/images/topo de bolo.png",
