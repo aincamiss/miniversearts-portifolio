@@ -20,8 +20,8 @@ export default function FunkoPortfolio() {
     {
       id: 2,
       title: " Beatrice - Re:ZERO chibi",
-      images: ["/images/Beakko RE ZERO.jpg"],
-      image: "/images/Beakko RE ZERO.jpg",
+      images: ["/images/beako.png"],
+      image: "/images/beako.png",
       category: "Anime",
     },
     {
