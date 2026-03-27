@@ -416,6 +416,13 @@ export default function FunkoPortfolio() {
       image: "/images/chaveiro soraka.png",
       category: "Chaveiros",
     },
+    {
+      id: 59,
+      title: " Pet - Chaveiro",
+      images: ["/images/chaveiro gato.png"],
+      image: "/images/chaveiro gato.png",
+      category: "Chaveiros",
+    },
     
     
     
