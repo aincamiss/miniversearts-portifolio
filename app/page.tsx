@@ -19,10 +19,10 @@ export default function FunkoPortfolio() {
     },
     {
       id: 2,
-      title: "Billie Eilish - chibi",
-      images: ["/images/billie.webp"],
-      image: "/images/billie.webp",
-      category: "Celebridades",
+      title: " Beatrice - Re:ZERO chibi",
+      images: ["/images/Beakko RE ZERO.jpg"],
+      image: "/images/Beakko RE ZERO.jpg",
+      category: "Anime",
     },
     {
       id: 3,
@@ -264,7 +264,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 37,
-      title: "Ghost face - Panico Chibi",
+      title: "Ghost face - PANICO Chibi",
       images: ["/images/Panico.png"],
       image: "/images/Panico.png",
       category: "Filmes",
@@ -304,6 +304,42 @@ export default function FunkoPortfolio() {
       image: "/images/mulher maravilha.png",
       category: "Filmes",
     },
+    {
+      id: 43,
+      title: " Baby Avatar - Chibi",
+      images: ["/images/baby caio.png"],
+      image: "/images/baby caio.png",
+      category: "Personalizados",
+    },
+    {
+      id: 44,
+      title: " Loira - PANICO Chibi",
+      images: ["/images/loira panico.png"],
+      image: "/images/loira panico.png",
+      category: "Filmes",
+    },
+    {
+      id: 45,
+      title: " Ponyo - Chibi",
+      images: ["/images/ponyo.png"],
+      image: "/images/ponyo.png",
+      category: "Filmes",
+    },
+    {
+      id: 46,
+      title: " Simo - Shuumatsu Chibi",
+      images: ["/images/simo.png"],
+      image: "/images/simo.png",
+      category: "Anime",
+    },
+    {
+      id: 47,
+      title: " Tesla - Shuumatsu Chibi",
+      images: ["/images/tesla.png"],
+      image: "/images/tesla.png",
+      category: "Anime",
+    },
+    
     
 
   ]
