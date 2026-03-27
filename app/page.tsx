@@ -339,6 +339,13 @@ export default function FunkoPortfolio() {
       image: "/images/tesla.png",
       category: "Anime",
     },
+    {
+      id: 47,
+      title: " Baby - Topo de bolo Chibi",
+      images: ["/images/topo de bolo nene.png"],
+      image: "/images/topo de bolo nene.png",
+      category: "Topo de bolo",
+    },
     
     
 
