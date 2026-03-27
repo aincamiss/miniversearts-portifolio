@@ -370,8 +370,8 @@ export default function FunkoPortfolio() {
     {
       id: 52,
       title: " Rosquinha - Chaveiro",
-      images: ["/images/chaveiro rosquinha.png"],
-      image: "/images/chaveiro rosquinha.png",
+      images: ["/images/chaveiro de rosquinha.png"],
+      image: "/images/chaveiro de rosquinha.png",
       category: "Chaveiros",
     },
     {
