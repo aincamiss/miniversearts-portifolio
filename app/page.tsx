@@ -313,10 +313,10 @@ export default function FunkoPortfolio() {
     },
     {
       id: 44,
-      title: " Loira - PANICO Chibi",
-      images: ["/images/loira panico.png"],
-      image: "/images/loira panico.png",
-      category: "Filmes",
+      title: " Baby - Topo de bolo Chibi",
+      images: ["/images/topo de bolo nene.png"],
+      image: "/images/topo de bolo nene.png",
+      category: "Topo de bolo",
     },
     {
       id: 45,
@@ -341,10 +341,10 @@ export default function FunkoPortfolio() {
     },
     {
       id: 48,
-      title: " Baby - Topo de bolo Chibi",
-      images: ["/images/topo de bolo nene.png"],
-      image: "/images/topo de bolo nene.png",
-      category: "Topo de bolo",
+      title: " Mulher na cama - PANICO Chibi",
+      images: ["/images/loira panico.png"],
+      image: "/images/loira panico.png",
+      category: "Filmes",
     },
     {
       id: 49,
