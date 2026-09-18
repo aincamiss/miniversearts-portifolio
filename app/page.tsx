@@ -12,10 +12,10 @@ export default function FunkoPortfolio() {
   const works = [
     {
       id: 1,
-      title: "Adão - Shuumatsu no Valkyrie CHIBI",
-      images: ["/images/adam.webp"],
-      image: "/images/adam.webp",
-      category: "Anime",
+      title: "Coraline - Impressão 3D 30cm",
+      images: ["/images/Coraline 30cm.png"],
+      image: "/images/Coraline 30cm.png",
+      category: "Filme",
     },
     {
       id: 2,
@@ -481,10 +481,10 @@ export default function FunkoPortfolio() {
     },
      {
       id: 73,
-      title: " Coraline - Impressão 3D",
-      images: ["/images/Coraline 30cm.png"],
-      image: "/images/Coraline 30cm.png",
-      category: "Filmes",
+      title: "Adão - Shuumatsu no Valkyrie CHIBI",
+      images: ["/images/Adão CHIBI.png"],
+      image: "/images/Adão CHIBI.png",
+      category: "Anime",
     },
     
     
