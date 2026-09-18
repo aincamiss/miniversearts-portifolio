@@ -97,8 +97,8 @@ export default function FunkoPortfolio() {
     {
       id: 13,
       title: "Pantheon - League of Legends chibi",
-      images: ["/images/pantheon.webp"],
-      image: "/images/pantheon.webp",
+      images: ["/images/Phanteon.png"],
+      image: "/images/Phanteon.png",
       category: "Games",
     },
     {
