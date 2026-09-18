@@ -174,8 +174,8 @@ export default function FunkoPortfolio() {
     {
       id: 24,
       title: "Brunhilde - Shuumatsu no Valkyrie chibi",
-      images: ["/images/brunhilde.webp"],
-      image: "/images/brunhilde.webp",
+      images: ["/images/Bruninha.png"],
+      image: "/images/Bruninha.png",
       category: "Anime",
     },
     {
