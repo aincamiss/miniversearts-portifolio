@@ -69,8 +69,8 @@ export default function FunkoPortfolio() {
     {
       id: 9,
       title: "Avatar Lutador - Personalizado chibi",
-      images: ["/images/Avatar Lutador.png"],
-      image: "/images/Avatar Lutador.png",
+      images: ["/images/Avatar Lutador (2).png"],
+      image: "/images/Avatar Lutador (2).png",
       category: "Personalizados",
     },
     {
