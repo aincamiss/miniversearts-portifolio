@@ -20,8 +20,8 @@ export default function FunkoPortfolio() {
     {
       id: 2,
       title: " Beatrice - Re:ZERO chibi",
-      images: ["/images/beako.png"],
-      image: "/images/beako.png",
+      images: ["/images/Beako CHIBI.png"],
+      image: "/images/Beako CHIBI.png",
       category: "Anime",
     },
     {
@@ -68,16 +68,16 @@ export default function FunkoPortfolio() {
     },
     {
       id: 9,
-      title: "Avatar - Personalizado chibi",
-      images: ["/images/gremista.webp"],
-      image: "/images/gremista.webp",
+      title: "Avatar Lutador - Personalizado chibi",
+      images: ["/images/Avatar Lutador.png"],
+      image: "/images/Avatar Lutador.png",
       category: "Personalizados",
     },
     {
       id: 10,
       title: "Beru - Solo Leveling chibi",
-      images: ["/images/beru.webp"],
-      image: "/images/beru.webp",
+      images: ["/images/Beru CHIBI.png"],
+      image: "/images/Beru CHIBI.png",
       category: "Anime",
     },
     {
@@ -104,20 +104,20 @@ export default function FunkoPortfolio() {
     {
       id: 14,
       title: "Jett - VALORANT FunkoPOP",
-      images: ["/images/jettPOP.png"],
-      image: "/images/jettPOP.png",
+      images: ["/images/Jett POP.png"],
+      image: "/images/Jett POP.png",
       category: "Games",
     },
     {
       id: 15,
       title: "Avatar - Personalizado chibi",
-      images: ["/images/oculos.webp"],
-      image: "/images/oculos.webp",
+      images: ["/images/Avatar Elias.png"],
+      image: "/images/Avatar Elias.png",
       category: "Personalizados",
     },
     {
       id: 16,
-      title: "Avatar - Personalizado chibi",
+      title: "Avatar para topo de bolo - Personalizado chibi",
       images: ["/images/topo de bolo.png"],
       image: "/images/topo de bolo.png",
       category: "Topo de bolo",
@@ -258,8 +258,8 @@ export default function FunkoPortfolio() {
     {
       id: 36,
       title: "Cavaleiro de Peixes - Cavaleiros do Zodíaco Chibi",
-      images: ["/images/cavaleiro de peixes chibi.png"],
-      image: "/images/cavaleiro de peixes chibi.png",
+      images: ["/images/Cavaleiro de Peixes CHIBI.png"],
+      image: "/images/Cavaleiro de Peixes CHIBI.png",
       category: "Anime",
     },
     {
@@ -285,7 +285,7 @@ export default function FunkoPortfolio() {
     },
     {
       id: 40,
-      title: "conjunto Meninas - Meninas super poderosas Chibi",
+      title: "conjunto Meninas - Meninas super poderosas",
       images: ["/images/meninas super poderosas.png"],
       image: "/images/meninas super poderosas.png",
       category: "Topo de bolo",
@@ -306,14 +306,14 @@ export default function FunkoPortfolio() {
     },
     {
       id: 43,
-      title: " Baby Avatar - Chibi",
+      title: " Bebê Avatar - Chibi",
       images: ["/images/baby caio.png"],
       image: "/images/baby caio.png",
       category: "Personalizados",
     },
     {
       id: 44,
-      title: " Baby - Topo de bolo Chibi",
+      title: " Bebê - Topo de bolo PERSONALIZADO Chibi",
       images: ["/images/topo de bolo nene.png"],
       image: "/images/topo de bolo nene.png",
       category: "Topo de bolo",
@@ -347,31 +347,10 @@ export default function FunkoPortfolio() {
       category: "Filmes",
     },
     {
-      id: 49,
-      title: " Par de casal - Chaveiro ",
-      images: ["/images/chaveiro avatar de casal.png"],
-      image: "/images/chaveiro avatar de casal.png",
-      category: "Chaveiros",
-    },
-    {
-      id: 50,
-      title: " Bola - Chaveiro",
-      images: ["/images/chaveiro bola.png"],
-      image: "/images/chaveiro bola.png",
-      category: "Chaveiros",
-    },
-    {
       id: 51,
       title: " Pet - Chaveiro",
       images: ["/images/chaveiro cachorro.png"],
       image: "/images/chaveiro cachorro.png",
-      category: "Chaveiros",
-    },
-    {
-      id: 52,
-      title: " Rosquinha - Chaveiro",
-      images: ["/images/chaveiro de rosquinha.png"],
-      image: "/images/chaveiro de rosquinha.png",
       category: "Chaveiros",
     },
     {
@@ -389,20 +368,6 @@ export default function FunkoPortfolio() {
       category: "Chaveiros",
     },
     {
-      id: 55,
-      title: " Cubo do Mario - chaveiro",
-      images: ["/images/chaveiro mario.png"],
-      image: "/images/chaveiro mario.png",
-      category: "Chaveiros",
-    },
-    {
-      id: 56,
-      title: " Casal - chaveiro",
-      images: ["/images/chaveiro personalizado de casal.png"],
-      image: "/images/chaveiro personalizado de casal.png",
-      category: "Chaveiros",
-    },
-    {
       id: 57,
       title: " Reyna - chaveiro",
       images: ["/images/chaveiro reyna.png"],
@@ -416,13 +381,7 @@ export default function FunkoPortfolio() {
       image: "/images/chaveiro soraka.png",
       category: "Chaveiros",
     },
-    {
-      id: 59,
-      title: " Pet - Chaveiro",
-      images: ["/images/chaveiro gato.png"],
-      image: "/images/chaveiro gato.png",
-      category: "Chaveiros",
-    },
+   
     
     
     
