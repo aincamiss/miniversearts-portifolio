@@ -229,10 +229,10 @@ export default function FunkoPortfolio() {
     },
     {
       id: 32,
-      title: "Mikasa - Attack On Titan POP",
-      images: ["/images/mikasa POP.png"],
-      image: "/images/mikasa POP.png",
-      category: "Anime",
+      title: "Cabeças de Avatar IMÃ - IMÃ DE GELADEIRA",
+      images: ["/images/Imã de geladeira 6 avatar.png"],
+      image: "/images/Imã de geladeira 6 avatar.png",
+      category: "Chaveiros",
     },
     {
       id: 33,
