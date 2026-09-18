@@ -412,8 +412,8 @@ export default function FunkoPortfolio() {
     {
       id: 63,
       title: " Pantera Cor de Rosa - POP",
-      images: ["/images/Pantera Cor de rosa.png"],
-      image: "/images/Pantera Cor de rosa.png",
+      images: ["/images/Pantera Cor de rosa POP.png"],
+      image: "/images/Pantera Cor de rosa POP.png",
       category: "Filmes",
     },
     {
